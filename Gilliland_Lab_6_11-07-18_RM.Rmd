@@ -1,0 +1,15 @@
+---
+title: "Gilliland_Lab_6_11-07-18"
+author: "Ken Gilliland"
+date: "November 7, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+```
+I'm in lab 6
