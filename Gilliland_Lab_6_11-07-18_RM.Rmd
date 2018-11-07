@@ -13,3 +13,17 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 ```
 I'm in lab 6
+
+
+```{r}
+hp_graph <- hp_data %>% 
+  filter(Name == "Harry" | Name == "Draco Malfoy") %>% 
+  select(Name, book, agg.per.mention) %>%
+  ggplot(aes(x=book, y=agg.per.mention)) %>% 
+           geom_col(aes(fill = Name), position = 'dodge')+
+  coord_flip() +
+  theme_bw()
+
+hp_graph
+  
+```
